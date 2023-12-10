@@ -1,0 +1,926 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="Setnotations relashionship of set $A\subseteq B\iff \forall x(x\in A\to x\in B)$ $A&#x3D;B\iff \forall x(x\in A\leftrightarrow x\in B)$   operations of set $A\cap B&#x3D;{ x|x\in A \wedge x\in B}$ $A\">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Set Theory">
+<meta property="og:url" content="http://example.com/2023/12/10/Set%20Theory/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Setnotations relashionship of set $A\subseteq B\iff \forall x(x\in A\to x\in B)$ $A&#x3D;B\iff \forall x(x\in A\leftrightarrow x\in B)$   operations of set $A\cap B&#x3D;{ x|x\in A \wedge x\in B}$ $A\">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-12-09T18:37:27.000Z">
+<meta property="article:modified_time" content="2023-12-09T19:38:36.125Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="Math">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>Set Theory - Hexo</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.6","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>Archives</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>Tags</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="Set Theory"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-12-10 02:37" pubdate>
+          December 10, 2023 am
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.6k words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          14 mins
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">Set Theory</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h3 id="Set"><a href="#Set" class="headerlink" title="Set"></a>Set</h3><h4 id="notations"><a href="#notations" class="headerlink" title="notations"></a>notations</h4><ul>
+<li>relashionship of set<ul>
+<li>$A\subseteq B\iff \forall x(x\in A\to x\in B)$</li>
+<li>$A&#x3D;B\iff \forall x(x\in A\leftrightarrow x\in B)$</li>
+</ul>
+</li>
+<li>operations of set<ul>
+<li>$A\cap B&#x3D;{ x|x\in A \wedge x\in B}$</li>
+<li>$A\cup B&#x3D;{ x|x\in A \vee x\in B}$</li>
+<li>$A\setminus B&#x3D;{x|x\in A\wedge x\notin B}$</li>
+<li>$A^c&#x3D;{x|x\notin A}$</li>
+<li>$A\Delta B&#x3D;(A\cup B)\setminus(A\cap B)$</li>
+<li>$\bigcap_{i\in I}A_i&#x3D;{x|\forall i\in I,x\in A_i}$</li>
+<li>$\bigcup_{i\in I}A_i&#x3D;{x|\exists i\in I,x\in A_i}$</li>
+</ul>
+</li>
+</ul>
+<h4 id="limit-of-set"><a href="#limit-of-set" class="headerlink" title="limit of set"></a>limit of set</h4><p>a sequence of set ${A_n}<em>{n&#x3D;1}^\infty$<br>if $A_n\subset A</em>{n+1}$, we says it is monotone increasing<br>and denote $\bigcup_{n&#x3D;1}^\infty A_n$ as $\lim_{n\to\infty}A_n$<br>if $A_n\supset A_{n+1}$, we says it is monotone decreasing<br>and denote $\bigcap_{n&#x3D;1}^\infty A_n$ as $\lim_{n\to\infty}A_n$</p>
+<p>${\bigcap_{k&#x3D;n}^\infty A_k}<em>{n&#x3D;1}^\infty$ is monotone increasing<br>$$\lim\inf</em>{n\to\infty} A_n&#x3D;\bigcup_{n&#x3D;1}^\infty\bigcap_{k&#x3D;n}^\infty A_k$$<br>$x\in\lim\inf_{n\to\infty}A_n\iff\exists n,\forall k\geq n,(x\in A_k)$<br>${\bigcap_{k&#x3D;n}^\infty A_k}<em>{n&#x3D;1}^\infty$ is monotone decreasing<br>$$\lim\sup</em>{n\to\infty} A_n&#x3D;\bigcap_{n&#x3D;1}^\infty\bigcup_{k&#x3D;n}^\infty A_k$$<br>$x\in\lim\sup_{n\to\infty}A_n\iff\forall n,\exists k\geq n,(x\in A_k)$</p>
+<p><strong>n-tuple</strong>: $$(x_1,x_2,\cdots,x_n)&#x3D;{x_1,{x_1,x_2},{x_1,x_2,x_3},\cdots}$$<br><strong>Cartesian product</strong><br>$$A\times B&#x3D;{(a,b)|a\in A \wedge b\in B}$$<br>specifically, $A^4&#x3D;A\times A\times A\times A$</p>
+<p><strong>Power set</strong><br>the power set of $S$, denoted as $\mathscr{P}(S)$, such that<br>$$X\in\mathscr{P}(S)\iff X\subseteq S$$</p>
+<p><strong>Partition</strong><br>$\mathscr{A}$ is a partition of nonempty set $X$ if</p>
+<ul>
+<li>$\forall A\in\mathscr{A},(A\neq\emptyset)$</li>
+<li>$\bigcup_{A\in\mathscr{A}}A&#x3D;X$</li>
+<li>$\forall A_1,A_2\in X,(A\cap B\neq\emptyset\to A_1&#x3D;A_2)$</li>
+</ul>
+<h3 id="mapping"><a href="#mapping" class="headerlink" title="mapping"></a>mapping</h3><p>$f$ is a mapping from $X$ to $Y$, denoted as $f:X\to Y$,if</p>
+<ul>
+<li>$\forall x\in X,\exists y\in Y,\Big((x,y)\in f\Big)$</li>
+<li>$\forall x\in X,\forall y_1,y_2\in Y,\Big((x,y_1)\in f\wedge(x,y_2)\in f\to y_1&#x3D;y_2\Big)$</li>
+</ul>
+<p>$f$ is a correspondence rule between two nonempty set $X,Y$ and each $x\in X$ map to a unique $y\in Y$, then $f$ is a mapping from $X$ to $Y$ denoted as $f:X\to Y$</p>
+<ul>
+<li><strong>domain</strong>: $D&#x3D;X$</li>
+<li><strong>codomain</strong>: $Y$</li>
+<li><strong>range</strong>: $R&#x3D;{y|y&#x3D;f(x),x\in D}$</li>
+<li>If $x$ is an element of $X$, and $f(x)&#x3D;y$, then $x$ is <strong>preimage</strong> of $y$, $y$ is <strong>image</strong>  of $x$, denoted as $x\mapsto y$</li>
+</ul>
+<p><strong>bijection &amp; injection &amp; surjection</strong></p>
+<ul>
+<li><p>injection&#x2F;one to one: $\forall x_1,x_2\in X,(f(x_1)&#x3D;f(x_2)\to x_1&#x3D;x_2)$</p>
+</li>
+<li><p>surjection&#x2F;onto: $\forall y\in Y,\exists x \in X,(f(x)&#x3D;y)$</p>
+</li>
+<li><p>bijection: $\forall x_1,x_2\in X,(f(x_1)&#x3D;f(x_2)\to x_1&#x3D;x_2)\wedge \forall y\in Y,\exists x \in X,(f(x)&#x3D;y)$</p>
+</li>
+<li><p><strong>function</strong></p>
+<ul>
+<li>a mapping from number set to number set</li>
+</ul>
+</li>
+<li><p><strong>functional</strong></p>
+<ul>
+<li>a mapping from function set to number set</li>
+</ul>
+</li>
+<li><p><strong>operator</strong></p>
+<ul>
+<li>a mapping from function set to function set</li>
+</ul>
+</li>
+<li><p><strong>identity function</strong></p>
+<ul>
+<li>$i_X:X\to X$ defined by $i_X(x)&#x3D;x$</li>
+</ul>
+</li>
+<li><p><strong>composition</strong></p>
+<ul>
+<li>$f:A\to B,g:B\to C$, then $g\circ f(x)&#x3D;g(f(x))$</li>
+<li>$h\circ (g\circ f)&#x3D;(h\circ g)\circ f$</li>
+</ul>
+</li>
+<li><p><strong>inverse</strong></p>
+<ul>
+<li>let $f:X\to Y$ a bijection, $f(x)&#x3D;y\iff f^{-1}(y)&#x3D;x$</li>
+<li>$f^{-1}\circ f&#x3D;i_X$ and $f\circ f^{-1}&#x3D;i_Y$</li>
+<li>$(f\circ g)^{-1}&#x3D;g^{-1}\circ f^{-1}$</li>
+</ul>
+</li>
+<li><p><strong>image</strong> of $A\subseteq X$</p>
+<ul>
+<li>$f(A)&#x3D;{f(x)|x\in A}$</li>
+</ul>
+</li>
+<li><p><strong>inverse images</strong> of $B\subseteq Y$</p>
+<ul>
+<li>$f^{-1}(B)&#x3D;{y|f(y)\in B}$</li>
+</ul>
+</li>
+<li><p><strong>transformation</strong> $f:X\to X$</p>
+<ul>
+<li><strong>permutation</strong> $T$ is a transformation and a bijetion</li>
+<li><strong>identity map</strong> $I:X\to X,\forall x\in X,(I(x)&#x3D;x)$</li>
+</ul>
+</li>
+</ul>
+<p><strong>indicator function</strong><br>suppose $S\subseteq X$, then $\chi_S:X\to{0,1}$ defined by $\chi_S(x)&#x3D;0$ if $x\notin S$, and $\chi_S(x)&#x3D;1$ if $x\in S$</p>
+<h3 id="Relation"><a href="#Relation" class="headerlink" title="Relation"></a>Relation</h3><p>if $R\subseteq X^n$, it is called <strong>n-ary relation</strong><br>more often, we discuss <strong>binary relation</strong></p>
+<p>suppose $R$ is a binary relation on $X$, it has the following properties conditionally</p>
+<ul>
+<li><strong>reflexive property</strong><ul>
+<li>$\forall x\in X((x,x)\in R)$</li>
+</ul>
+</li>
+<li><strong>symetric property</strong><ul>
+<li>$(x_1,x_2)\in R\to(x_2,x_1)\in R$</li>
+</ul>
+</li>
+<li><strong>antisymetric property</strong><ul>
+<li>$(x_1,x_2)\in R\wedge (x_2,x_1)\in R\to x_1&#x3D;x_2$</li>
+</ul>
+</li>
+<li><strong>strongly antisymetric property</strong><ul>
+<li>$(x_1,x_2)\in R\to(x_2,x_1)\not\in R$</li>
+</ul>
+</li>
+<li><strong>transitive property</strong><ul>
+<li>$(x_1,x_2\in R\wedge(x_2,x_3)\in R\to(x_1,x_3)\in R)$</li>
+<li>EXAMPLE1:”greater than” relation on the set of real numbers is transitive</li>
+<li><strong>传递闭包</strong>(transitive closure)<ul>
+<li>The transitive closure of $R$, denoted by $R^*$,is defined as $R^*&#x3D;R\bigcup{(x_i,x_j)|\exists x_{k_1}\cdots x_{k_t}((x_i,x_{k_1}),(x_{k_1},x_{k_2}),\cdots,(x_{k_t},x_j)\in R)}$</li>
+<li>其实$R^*$就是包含$R$的具有传递性的最小集合</li>
+<li><strong>Warshall Algorithm</strong> 寻找传递闭包的算法<ul>
+<li>n次循环{找到(a,i)(i,b),add $A\times B$}</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>$R$ is an equivalence relation if and only if it is:</p>
+<ul>
+<li>reflexive</li>
+<li>symetric</li>
+<li>transitive<br>when $R$ is an equivalence relation set, we write $(x,y)\in R$ as $x\sim y$, we also define $E_x&#x3D;{y\in X:x\sim y}$, called equivalence class</li>
+</ul>
+<h3 id="order"><a href="#order" class="headerlink" title="order"></a>order</h3><h4 id="preorder"><a href="#preorder" class="headerlink" title="preorder"></a>preorder</h4><p>for a given $(X,R)$, $X$ is a &#x3D;&#x3D;preordered set&#x3D;&#x3D;, a.k.a. quasi-order set, when $R$ is:</p>
+<ul>
+<li>irreflexive ? reflexive</li>
+<li>transitive</li>
+</ul>
+<h4 id="partial-order"><a href="#partial-order" class="headerlink" title="partial order"></a>partial order</h4><p>for a given $(X,R)$, $X$ is a &#x3D;&#x3D;partially ordered set&#x3D;&#x3D;, when $R$ is:</p>
+<ul>
+<li>reflexive</li>
+<li>antisymetric</li>
+<li>transitive</li>
+</ul>
+<p>we write $(x,y)\in R$ as $x\preceq y$, called $x$ precede $y$<br>if $x\preceq y \wedge x\neq y$, they we write it as $x\prec y$, called $x$ strictly precede $y$</p>
+<p>&#x3D;&#x3D;comparability&#x3D;&#x3D;<br>suppose $x_1,x_2\in X$ and $X$ is a partially ordered set, then if $x_1\preceq x_2\vee x_2\preceq x_1$, we says they are comparable, otherwice, they are uncomparable and written as $x_1||x_2$<br>trichotomy of relations:<br>$$x_1\preceq x_2\vee x_2\preceq x_1\vee x_1||x_2$$</p>
+<p>given a partial order set $(X,\preceq)$ and a set $S\subseteq X$</p>
+<ul>
+<li><strong>lower bound &amp; upper bound</strong>:<ul>
+<li>if $\exists m\in X,\forall x\in S,(m\preceq x)$, then $m$ is a lower bound of $S$</li>
+</ul>
+</li>
+<li><strong>infimum &amp; supremum</strong>: <ul>
+<li>if $l$ is a lower bound of $S$, and $\forall m,(m\preceq l)$, then $l$ is an infimum of $S$</li>
+<li>$l$ is denoted as $\inf S$</li>
+</ul>
+</li>
+<li><strong>minimal &amp; maximal</strong>:<ul>
+<li>if $\exists m\in S,\forall x\in S,(m\npreceq x)$ , then $m$ is a minimal of $S$</li>
+</ul>
+</li>
+<li><strong>minimum &amp; maximum</strong>:<ul>
+<li>if $\exists m\in S,\forall x\in S,(m\preceq x)$ then $m$ is a minimum of $S$</li>
+</ul>
+</li>
+</ul>
+<p>&#x3D;&#x3D;Hasse diagram&#x3D;&#x3D;<br>we say $x$ is a immediate predcessor of $y$ if and only if<br>$$(x\prec y)\wedge(\neg\exists z\in X,(x\prec z\wedge z\prec y))$$<br>we denote it as $x\ll y$</p>
+<p>then, we draw a line between two elements if and only if one is an immediate predcessor of the other, this is called Hasse diagram<br>![[Pasted image 20231108153940.png|250]]</p>
+<h4 id="totally-ordered-set"><a href="#totally-ordered-set" class="headerlink" title="totally ordered set"></a>totally ordered set</h4><p>a partially ordered set $X$ is a &#x3D;&#x3D;totally ordered set&#x3D;&#x3D;, a.k.a. chain or linear order, when:<br>$$\forall x,y\in X,(x\preceq y\vee y\preceq x\vee x&#x3D;y)$$<br>$A$ is a &#x3D;&#x3D;well-ordered set&#x3D;&#x3D;, when:<br>$$\forall S\subset X,S\neq\emptyset,\big(\exists x\in S,\forall y\in S,(x&#x3D;y\vee xRy)\big)$$</p>
+<h4 id="lattice"><a href="#lattice" class="headerlink" title="lattice"></a>lattice</h4><p>&#x3D;&#x3D;two equivalent definitions of lattice&#x3D;&#x3D;<br>$\vee,\wedge:L^2\to L$ are both operator on $L$<br>$(L,\vee,\wedge)$ is a lattice, if and only if the both operators suffices:</p>
+<ul>
+<li>commutitive law</li>
+<li>associative law</li>
+<li>absorption law: $x\wedge(x\vee y)&#x3D;x$</li>
+</ul>
+<p>we can deduce idempotent law then: $x\wedge x&#x3D;x$</p>
+<p>principle of duality?</p>
+<p>$(L,\preceq)$ is a lattice, if and only if each two elements have a supremum and a infremum<br>suppose $x\wedge y&#x3D;x\to x\preceq y$, then $(L,\preceq)$ is partially ordered</p>
+<p>$x\wedge y&#x3D;\inf(x,y)$<br>$x\vee y&#x3D;\sup(x,y)$</p>
+<p>a lattice have a lower bound $0$ and an upper bound $I$</p>
+<p>&#x3D;&#x3D;distributive lattice&#x3D;&#x3D;<br>a distributive lattice satisfies:</p>
+<ul>
+<li>distributive law: $x\wedge (y\vee z)&#x3D;(x\wedge y)\vee(x\wedge z)$</li>
+</ul>
+<p>a totally ordered set is a lattice</p>
+<p>&#x3D;&#x3D;join irreducible elements&#x3D;&#x3D;<br>$x$ is a join irreducible element(既约并元) if and only of $x&#x3D;0$ or $(x&#x3D;y_1\vee y_2)\to (a&#x3D;x)\vee (a&#x3D;y)$<br>$x$ is called an atom if and only if it immediately succeed $0$<br>$x&#x3D;d_1\vee d_2\vee\cdots\vee d_n$</p>
+<p>&#x3D;&#x3D;complement&#x3D;&#x3D;<br>$y$ is called the complement of $x$ if:</p>
+<ul>
+<li>$x\vee y&#x3D;I$</li>
+<li>$x\wedge y&#x3D;0$<br>complement is unique if exists</li>
+</ul>
+<p>a lattice is complemented if all elements in it has a complement</p>
+<p>&#x3D;&#x3D;some examples of lattice&#x3D;&#x3D;</p>
+<ul>
+<li>$(\mathbb{Z}^+,\mid)$ or $(\mathbb{Z}^+,\gcd,\mathrm{lcm})$</li>
+<li>$(\mathcal{P}(S),\subseteq)$ or $(\mathcal{P}(S),\cup,\cap)$</li>
+</ul>
+<h4 id="Order-isomorphic"><a href="#Order-isomorphic" class="headerlink" title="Order isomorphic"></a>Order isomorphic</h4><p>we says $X_1$ is order isomorphic to $X_2$ , written as $X_1\cong X_2$, if there exists a bijection $f:X_1\to X_2$ satisfies:$$x\preceq y\to f(x)\preceq f(y)\wedge x||y\to f(x)||f(y)$$</p>
+<h3 id="Cardinal"><a href="#Cardinal" class="headerlink" title="Cardinal"></a>Cardinal</h3><p>the <strong>Cardinality</strong> of set $A$, denoted as $|A|$<br>we says $A$ and $B$ are equivalent (or equinumerous) if and only if there exists a bijection $f:A\to B$</p>
+<ul>
+<li>$f_{bi}:A\to B\iff \lvert A\rvert&#x3D;\lvert B\rvert$</li>
+<li>$f_{in}:A\to B\iff\lvert A\rvert\leq\lvert B\rvert$</li>
+<li>$f_{sur}:A\to B\iff\lvert A\rvert\geq\lvert B\rvert$</li>
+</ul>
+<p>$A$ is a <strong>finite set</strong> if and only if $\exists n\in\mathbb{N},(|{1,2,\cdots,n}|&#x3D;|A|)$<br>otherwise, it is is a <strong>infinite set</strong></p>
+<p>$A$ is a <strong>countable set</strong> if and only if $\exists S\subseteq\mathbb{N},(|S|&#x3D;|A|)$<br>otherwise, $A$ is a <strong>uncountable set</strong></p>
+<p>&#x3D;&#x3D;Cantor-Bernstein Theorem&#x3D;&#x3D;(康托-伯恩斯坦定理)<br>$$\lvert A\rvert\leq\lvert B\rvert\wedge\lvert B\rvert\leq\lvert A\rvert\iff\lvert A\rvert&#x3D;\lvert B\rvert$$<br>Proof:<br>use Banach Theorem:<br>suppose $f:A\to B, g:B\to A$, $\exists A_0,A_1,B_0,B_1(B_1&#x3D;{f(x)|x\in A_0}\wedge A_1&#x3D;{g(x)|x\in B_0}$<br>let $f,g$ are both injection, we have$f_{bi}:A_0\to B_1 g_{bi}:B_0\to A_1$</p>
+<p>&#x3D;&#x3D;Cantor Theorem&#x3D;&#x3D;<br>$$\lvert S\rvert\lt\lvert 2^S\rvert$$<br>Proof:<br>it suffices to prove that there isn’t an injection $f:S\to 2^S$<br>$Z&#x3D;{x\in S\wedge x\not\in f(x)}$<br>such technique is called <strong>Cantor’s Diagonalization</strong>(康托对角线)<br>it is requently used when we intend to prove a set $S$ is uncountable<br>sppose $S$ is countable, then we can put all its elements $a,b,\cdots$ in a line, then we find a way to turn them into a sequence $a_1,a_2,\cdots,b_1,b_2,\cdots$, and we know that an element $z$, such that $z_1\neq a_1,z_2\neq b_2,\cdots$  is absent from the line</p>
+<p>$\lvert\mathbb{N}\rvert\leq\lvert\mathbb{R}\rvert$<br>$\lvert[a,b]\rvert&#x3D;\mathbb{R}$<br>先构造一个线性映射$f:[a,b]\to[-\cfrac\pi2,\cfrac\pi2],f(x)&#x3D;-\cfrac\pi2\cdot\cfrac{b+a}{b-a}$<br>$f$ is a bijection, $g(x)&#x3D;\tan x$<br>$\lvert\mathbb{R}^\infty\rvert&#x3D;\lvert\mathbb{R}\rvert$<br>$\lvert2^{\mathbb{N}}\rvert&#x3D;\lvert\mathbb{R}\rvert$</p>
+<h3 id="ordinals"><a href="#ordinals" class="headerlink" title="ordinals"></a>ordinals</h3><p>Ordinals belike:<br>$$\Phi,{\Phi},{\Phi,{\Phi}},{\Phi,{\Phi},{\Phi,{\Phi}}},\cdots$$<br>Properties of ordinals:<br>$\beta\subset\alpha\leftrightarrow\beta\in\alpha$<br>$S(\alpha)&#x3D;\alpha\cup{\alpha}$<br>We use ordinals as a representation element of Isomorphism class of well-ordered sets.<br>Construct a bijection between ordinals and natural number: $f:\omega\to\mathbb{N}$<br>$$f(\Phi)&#x3D;0,f(n+1)&#x3D;f(n)\cup{f(n)}$$</p>
+<p>&#x3D;&#x3D;Ordinal Arithmetic&#x3D;&#x3D;<br>limit ordinal: $\geq\omega$</p>
+<p>$SUCC(\alpha)&#x3D;\alpha\cup{\alpha}$<br>denoted as $\alpha+1$<br>$1+\omega&#x3D;2\times\omega&#x3D;\omega$<br>$\omega+\omega&#x3D;\omega\times2$<br>$\omega\times\omega&#x3D;\omega^2$<br>$\omega^{\epsilon_0}&#x3D;\epsilon_0$</p>
+<p>$A+B$<br>$A\times B$<br>$A^B$</p>
+<p>commutative no<br>associative yes</p>
+<p>Hilbert’s room<br>$\epsilon_0&#x3D;\omega^{\omega^{\omega^\omega}}$</p>
+<p>cardinal<br>cardinality<br>Arithmetic<br>$\aleph_0$<br>$2^{\aleph_0}$</p>
+<p>konig<br>$\sum&lt;\prod$</p>
+<p>transfinite</p>
+<h3 id="AC-Well-ordering-Thm-Mathmatical-induction"><a href="#AC-Well-ordering-Thm-Mathmatical-induction" class="headerlink" title="AC &amp; Well-ordering Thm &amp; Mathmatical induction"></a>AC &amp; Well-ordering Thm &amp; Mathmatical induction</h3><p>ZFC: Zermelo-Fraenkel Axioms with Choice<br>ZF: Zermelo-Fraenkel Axioms<br>&#x3D;&#x3D;Axioms with Choice&#x3D;&#x3D;<br>$\forall A_i,A_j\in\mathcal{S}(A_i\neq A_j\to A_i\cap A_j&#x3D;\Phi)$, there exists a choice function $f:\mathcal{S}\to A$</p>
+<p>&#x3D;&#x3D;Zorn’s Lemma&#x3D;&#x3D;</p>
+<p>&#x3D;&#x3D;Principle of mathmatical induction&#x3D;&#x3D;</p>
+<ul>
+<li>first form<ul>
+<li>$A$ is a subset of $\mathbb{N}$ with:</li>
+<li>$1\in A$</li>
+<li>$k\in A\to k+1\in A$</li>
+</ul>
+</li>
+<li>second form<ul>
+<li>$A$ is a subset of $\mathbb{N}$ with:</li>
+<li>$1\in A$</li>
+<li>$\bigwedge_{j\in{1,2,\cdots,k}} j\in A\to k+1\in A$</li>
+</ul>
+</li>
+<li>principle of transfinite induction<ul>
+<li>$A$ is a subset of well-ordered set $S$ with:</li>
+<li>$a_0\in A$</li>
+<li>$a\subseteq A\to a\in A$</li>
+</ul>
+</li>
+</ul>
+<h3 id="Russel-Paradox"><a href="#Russel-Paradox" class="headerlink" title="Russel Paradox"></a>Russel Paradox</h3><p><strong>Russell Paradox</strong><br>$S&#x3D;{x|x\not\in x}\to((S\in S\to S\not\in S)\wedge(S\not\in S\to S\in S))$<br>Similar Paradoxes</p>
+<ul>
+<li>Liar Paradox</li>
+<li>Barber’s Paradox</li>
+<li>Unexpected Hanging Paradox</li>
+</ul>
+<p><strong>类</strong>(class):</p>
+<ul>
+<li>真类(proper class)<ul>
+<li>真类不能作为类的元素</li>
+</ul>
+</li>
+<li>集合(set)<ul>
+<li>$S$是一个集合，必须满足$\exists x\in S(x\cap S&#x3D;\phi)$</li>
+</ul>
+</li>
+</ul>
+<h3 id="计数"><a href="#计数" class="headerlink" title="计数"></a>计数</h3><p>加法法则<br>乘法法则</p>
+<h4 id="The-Pigeonhole-Principle"><a href="#The-Pigeonhole-Principle" class="headerlink" title="The Pigeonhole Principle"></a>The Pigeonhole Principle</h4><p><strong>technique</strong><br>找鸽子和巢(pigeion &amp; hole),鸽子往往是最具象的,巢是抽象的,同巢的鸽子代表了必然存在的某种共性联系,这种联系可以发展成为某个更加抽象的结论</p>
+<hr>
+<p><strong>example</strong></p>
+<ul>
+<li>assertion:任意$n+1$个数必有两个数模$n$同余<ul>
+<li>pigeion:$n+1$个数</li>
+<li>hole:$n$个同余类</li>
+<li>1 1 1 1 1…2</li>
+</ul>
+</li>
+<li>assertion:平面(plane)上任意5个格点(lattice point)必有2点连线中点为格点<ul>
+<li>pigeion:格点</li>
+<li>hole:奇数偶数排列</li>
+<li>1 1 1 2</li>
+</ul>
+</li>
+<li>assertion:任意$n^2+1$元素序列,必然存在一个$n+1$元素单调子序列(monotone subsequence)<ul>
+<li>pigeion:元素</li>
+<li>hole:不同起始增减子序列元素个数</li>
+<li>1 1 1 1 1…2</li>
+</ul>
+</li>
+</ul>
+<p><strong>康托集(Cantor)</strong></p>
+<ul>
+<li>考虑$f:Z\to N$,不难构造出一个双射(bijection)<ul>
+<li>the same size</li>
+</ul>
+</li>
+<li>考虑$f:A\to2^A$,其中$2^A$表示$A$的所有子集的集合<ul>
+<li>我们希望证明$f$不是满射<ul>
+<li>$B&#x3D;{x\in A\wedge x\not\in f(x)}$(i.e.所有不属于自己的像的元素构成的集合)那么不难证明,没有元素的像是$B$</li>
+</ul>
+</li>
+<li>超限数(transfinite cardinals)</li>
+</ul>
+</li>
+</ul>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Math/" class="print-no-link">#Math</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>Set Theory</div>
+      <div>http://example.com/2023/12/10/Set Theory/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>John Doe</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>December 10, 2023</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>Licensed under</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2023/12/10/Hello-World-0/" title="Hello,World!">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Hello,World!</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/12/10/hello-world/" title="Hello World">
+                        <span class="hidden-mobile">Hello World</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>Table of Contents</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>
