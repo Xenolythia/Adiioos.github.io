@@ -1,0 +1,1441 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.ico">
+  <link rel="icon" href="/img/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Adiios">
+  <meta name="keywords" content="Math,CS,English">
+  
+    <meta name="description" content="Mathmetical Analysis">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mathmetical Analysis">
+<meta property="og:url" content="http://example.com/2023/12/12/Mathmetical%20Analysis/index.html">
+<meta property="og:site_name" content="Adiios&#39;s Blog">
+<meta property="og:description" content="Mathmetical Analysis">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/img/idx_2.jpg">
+<meta property="article:published_time" content="2023-12-11T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-12-12T18:40:13.231Z">
+<meta property="article:author" content="Adiios">
+<meta property="article:tag" content="Math">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/img/idx_2.jpg">
+  
+  
+  
+  <title>Mathmetical Analysis - Adiios&#39;s Blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.6","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Adiios&#39;s Blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>Archives</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>Tags</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/bg_3.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="Mathmetical Analysis"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-12-12 00:00" pubdate>
+          December 12, 2023 am
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          3k words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          26 mins
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">Mathmetical Analysis</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h2 id="real-number-theory">0. Real Number Theory</h2>
+<p><strong>construction of real number set</strong></p>
+<p><strong>Dedekind cuts</strong> <span
+class="math inline">\(\mathbb{R}\)</span> is all <span
+class="math inline">\(\alpha\)</span> such that:</p>
+<ul>
+<li><span class="math inline">\(\alpha\neq\varnothing\)</span> and <span
+class="math inline">\(\alpha\neq\mathbb{Q}\)</span></li>
+<li><span class="math inline">\(\forall p\in\alpha,\forall
+q\in\mathbb{Q},(q&lt;p\to q\in\mathbb{Q})\)</span></li>
+<li><span class="math inline">\(\forall p\in\alpha,\exists
+r\in\alpha,(p&lt;r)\)</span></li>
+</ul>
+<p>define the order on <span class="math inline">\(\mathbb{R}\)</span>:
+<span class="math inline">\((\mathbb{R},\leq)\)</span> define the
+operator on <span class="math inline">\(\mathbb{R}\)</span>: <span
+class="math inline">\((\mathbb{R},+,\times)\)</span></p>
+<p><strong>Cauchy sequence</strong></p>
+<p><strong>density</strong> <span class="math inline">\(\forall
+x_1,x_2\in\mathbb{R},\exists
+x\in\mathbb{R},(x_1&lt;x&lt;x_2)\)</span></p>
+<h3 id="completeness">Completeness</h3>
+<p><strong>the completeness axiom of the reals</strong> - every nonempty
+subset of real numbers that is bounded above has a supremum - any Cauchy
+sequence converges</p>
+<h2 id="limit-theory">1. Limit Theory</h2>
+<h3 id="definition-of-limits">Definition of Limits</h3>
+<h4 id="limits-of-sequences">Limits of Sequences</h4>
+<p>Set an infinite sequence <span
+class="math inline">\(\{x_n\}\)</span>, if: <span
+class="math display">\[\exists L,\forall\epsilon&gt;0,\exists
+N\in\mathbb{N},\forall n,(n&gt;N\to\lvert x_n-L\rvert
+&lt;\epsilon)\tag1\]</span> we say that it converge to <span
+class="math inline">\(L\)</span>, which is denoted as <span
+class="math inline">\(\lim_{n\to\infty}x_n=L\)</span></p>
+<p><span class="math display">\[\forall G&gt;0,\exists N\in
+\mathbb{N},\forall n,(n&gt;N\to x_n&gt;G)\tag2\]</span> we say that it
+is disvergent, which is denoted as <span
+class="math inline">\(\lim_{n\to\infty}x_n=\infty\)</span></p>
+<h4 id="limits-of-functions">Limits of Functions</h4>
+<p>Set a function <span class="math inline">\(f(x)\)</span>, suppose
+<span class="math inline">\(\mathring{U}(x_0)\subseteq D_f\)</span>, if:
+<span class="math display">\[\exists
+L,\forall\epsilon&gt;0,\exists\delta&gt;0 ,\forall x,(\lvert x-x_0
+\rvert&lt;\delta\to \lvert f(x)-L \rvert&lt;\epsilon)\tag1\]</span> we
+say that it converge to <span class="math inline">\(L\)</span>, which is
+denoted as <span class="math inline">\(\lim_{x\to
+x_0}f(x)=L\)</span></p>
+<p><span class="math display">\[\exists L,\forall\epsilon&gt;0,\exists
+G\in R ,\forall x,(x&gt;G\to \lvert f(x)-L
+\rvert&lt;\epsilon)\tag2\]</span> we say that it converge to <span
+class="math inline">\(L\)</span>, which is denoted as <span
+class="math inline">\(\lim_{x\to\infty}f(x)=L\)</span></p>
+<p><span class="math display">\[\forall K&gt;0,\exists\delta&gt;0
+,\forall x,(\lvert x-x_0 \rvert&lt;\delta\to f(x)&gt;K)\tag3\]</span> we
+say that it is disvergent, which is denoted as <span
+class="math inline">\(\lim_{x\to x_0}f(x)=\infty\)</span></p>
+<p><span class="math display">\[\forall K&gt;0,\exists G&gt;0,\forall
+x,(x&gt;G\to f(x)&gt;K)\tag4\]</span> we say that it is disvergent,
+which is denoted as <span
+class="math inline">\(\lim_{x\to\infty}f(x)=\infty\)</span></p>
+<p>One-sided Limits</p>
+<ul>
+<li>left-sided limit: <span class="math inline">\(\lim_{x\to
+x_0^+}f(x)\)</span></li>
+<li>right-sided limit: <span class="math inline">\(\lim_{x\to
+x_0^-}f(x)\)</span></li>
+</ul>
+<h4 id="relationship">Relationship</h4>
+<p><strong>subsequence</strong>: <span class="math inline">\(\lim_{x\to
+x_0}f(x)=L \leftrightarrow \forall \{x_{n_k}\}(\lim_{k\to
+\infty}x_{n_k}=L)\)</span></p>
+<p><strong>Heine theorem</strong> <span
+class="math display">\[\lim_{x\to
+x_0}f(x)=L\iff\forall\{x_n\},(\lim_{n\to\infty}x_n=x_0\to\lim_{n\to\infty}f(x_n)=L)\]</span></p>
+<h3 id="applying-limits">Applying Limits</h3>
+<h4 id="properties-of-limits">Properties of Limits</h4>
+<ul>
+<li>uniqueness of limit(唯一性)
+<ul>
+<li><span class="math inline">\((\lim_{x\to
+x_0}f(x)=L_1)\wedge(\lim_{x\to x_0}f(x)=L_2)\to (L_1=L_2)\)</span></li>
+</ul></li>
+<li>boundedness of limit(有界性)
+<ul>
+<li><span class="math inline">\((\lim_{x\to x_0}f(x)=L)\to(\exists
+M,\forall x\in\mathring{U}(x_0,\delta),(M\geq x))\)</span></li>
+</ul></li>
+<li>locally sign-preserving property(保号性)
+<ul>
+<li><span class="math inline">\((\lim_{x\to
+x_0}f(x)=L)\wedge(L&lt;t)\to(\exists\delta&gt;0,\forall
+x\in\mathring{U}(x_0,\delta),(x&lt;t))\)</span></li>
+</ul></li>
+<li>squeeze theorem(迫敛性)
+<ul>
+<li>if <span class="math inline">\(\lim_{x\to x_0}g(x)=\lim_{x\to
+x_0}h(x)=L\)</span> and <span class="math inline">\(\forall
+x\in\mathring{U}(x_0),(g(x)\leq f(x)\leq h(x))\)</span>, then <span
+class="math inline">\(\lim_{x\to x_0}f(x)=L\)</span></li>
+</ul></li>
+</ul>
+<h4 id="criteria-for-the-existence-of-limits">Criteria for the Existence
+of Limits</h4>
+<p><strong>Squeeze Theorem</strong>: <span
+class="math display">\[g_1(x)\leq f(x) \leq g_2(x)\wedge\lim _{x\to
+x_0}g_1(x)=\lim _{x\to x_0}g_2(x)=L\to\lim _{x \to x_0}f(x)=L\]</span>
+an important limit: <span class="math inline">\(\lim _{x \to
+0}\cfrac{\sin x}{x}=1\)</span></p>
+<blockquote>
+<p>Proof: <span class="math inline">\(x\in(0,\frac\pi2)\to\sin
+x&lt;x&lt;\tan x\to\cos x&lt;\cfrac{\sin x}{x}&lt;1\)</span></p>
+</blockquote>
+<p><strong>Monotone Convergence Theorem</strong>: If a function or
+sequence of real numbers is monotonic and bounded, then it definitely
+has a limit an important limit: <span class="math inline">\(\lim _{x \to
+\infty}(1+\cfrac 1x)^x=e\)</span></p>
+<blockquote>
+<p>Proof:</p>
+</blockquote>
+<p><strong>Cauchy principle of convergence</strong>: a given <span
+class="math inline">\(\{a_n\}\)</span> is called Cauchy sequence if:
+<span class="math display">\[\forall\epsilon&gt;0,\exists
+N\in\mathbb{N},\forall i,j&gt;N,(|a_i-a_j|&lt;\epsilon)\]</span> a
+Cauchy sequence converge</p>
+<h3 id="infinitesimal">Infinitesimal</h3>
+<h4 id="infinitesimals">Infinitesimals</h4>
+<p>if ==<span class="math inline">\(\lim \alpha(x)=0\)</span>==, then we
+call <span class="math inline">\(\alpha(x)\)</span> is the infinitesimal
+quantity in this limit process</p>
+<p>a theorem that relate limits and infinitesimal quantities: <span
+class="math display">\[\lim f(x)=L\iff
+f(x)+\alpha(x)=L,\lim\alpha(x)=0\]</span></p>
+<p>properties of infinitesimal: <span class="math inline">\(\lim
+C\cdot\alpha=0\)</span> based on infinitesimals, we can deduce the
+<strong>four arithmetic rules of limits</strong></p>
+<h4 id="order-of-infinitesimals">Order of infinitesimals</h4>
+<p>sometimes the four arithmetic rules of limits fail, we call these
+limits <strong>indeterminate</strong>: examples: <span
+class="math inline">\(\cfrac
+00,\cfrac\infty\infty,0\cdot\infty,\infty-\infty,\infty^0,0^0,(1+0)^\infty\)</span>
+Fortunately, all above can be reduced to the the form of <span
+class="math inline">\(\cfrac 00\)</span></p>
+<ul>
+<li>Higher-order infinitesimal: <span
+class="math inline">\(\lim\cfrac\beta\alpha=0\)</span> , denoted as
+==<span class="math inline">\(\beta=o(\alpha)\)</span>==</li>
+<li>Lower-order infinitesimal: <span class="math inline">\(\lim \cfrac
+\beta \alpha=\infty\)</span> , denoted as ==<span
+class="math inline">\(\alpha=o(\beta)\)</span>==</li>
+<li>Same-order infinitesimals: <span class="math inline">\(\lim \cfrac
+\beta \alpha=c\)</span> , denoted as ==<span
+class="math inline">\(\beta\sim c\alpha\)</span>==</li>
+<li><span class="math inline">\(k\)</span>th-order infinitesimal: <span
+class="math inline">\(\lim \cfrac \beta {\alpha^k}=c\)</span> , denoted
+as ==<span class="math inline">\(\beta\sim c\alpha^k\)</span>==</li>
+<li><strong>Equivalent infinitesimal</strong>: <span
+class="math inline">\(\lim \cfrac \beta \alpha=1\)</span> , denoted as
+==<span class="math inline">\(\beta\sim\alpha\)</span>==</li>
+</ul>
+<p>Among all, Equivalent infinitesimal is the most important one, for
+the reason that we use them to simplify equations very often, which is
+based on the equivalent infinitesimal substitution theorems: If <span
+class="math inline">\(\alpha\sim\beta\)</span> , then <span
+class="math inline">\(\lim \alpha f(x)=\lim \beta f(x)\)</span></p>
+<p>after we determine a <strong>Reference infinitesimal</strong>, often
+<span class="math inline">\(x\)</span>, we look for <span
+class="math inline">\(k\)</span> such that <span
+class="math inline">\(f(x)=cx^k+o(x^k)\)</span>, then <span
+class="math inline">\(cx^k\)</span> is called <strong>Infinitesimal
+principal</strong></p>
+<h4 id="useful-equivalent-infinitesimal">Useful Equivalent
+Infinitesimal</h4>
+<p>when <span class="math inline">\(x\to0\)</span>:</p>
+<ul>
+<li><span class="math inline">\(x\sim\sin x\sim\tan x\)</span></li>
+<li><span class="math inline">\(\cos x\sim 1-\frac12x^2\)</span></li>
+<li><span class="math inline">\(x\sim e^x-1\sim\ln (x+1)\)</span></li>
+<li><span class="math inline">\((1+x)^\mu-1\sim\mu x\)</span></li>
+</ul>
+<p>hint: don't forget when <span class="math inline">\(u(x)\to
+0\)</span>, all <span class="math inline">\(x\)</span> above can be
+replaced with <span class="math inline">\(u(x)\)</span> integrally</p>
+<h3 id="continuity">Continuity</h3>
+<h4 id="definition-of-continuity">Definition of Continuity</h4>
+<p><strong>Continuity at one point</strong> set a function <span
+class="math inline">\(f(x)\)</span>, suppose <span
+class="math inline">\(\mathring{U}(x_0)\subseteq D_f\)</span>, if limit
+below exists: <span class="math display">\[\lim_{x\to
+x_0}f(x)=f(x_0)\]</span> then we said <span
+class="math inline">\(f(x)\)</span> is continuous at <span
+class="math inline">\(x_0\)</span></p>
+<p>one-sided continuity:</p>
+<ul>
+<li>left-sided continuity: <span class="math inline">\(\lim_{x\to
+x_0^+}f(x)= f(x_0)\)</span></li>
+<li>right-sided continuity: <span class="math inline">\(\lim_{x\to
+x_0^-}f(x)= f(x_0)\)</span></li>
+</ul>
+<p><strong>Continuity on an interval</strong> If <span
+class="math inline">\(\forall x_0\in (a,b),(\lim_{x\to
+x_0}f(x)=f(x_0))\)</span> and <span class="math inline">\(\lim_{x\to
+a^+}f(x)= f(a)\)</span> , we say that <span
+class="math inline">\(f(x)\)</span> is continuious on <span
+class="math inline">\([a,b)\)</span> , denoted as <span
+class="math inline">\(f(x)\in C[a,b)\)</span> distinction between open
+interval &amp; closed interval</p>
+<p><strong>Discontinuity</strong></p>
+<ul>
+<li>Removable Discontinuity: <span class="math inline">\(\lim_{x\to
+x_0}f(x)=L\)</span> but <span class="math inline">\(L\neq
+x_0\)</span></li>
+<li>Jump Discontinuity: <span class="math inline">\(\lim_{x\to
+x_0^+}f(x)\neq\lim_{x\to x_0^-}f(x)\)</span></li>
+<li>Infinite Discontinuity: <span class="math inline">\(\lim_{x\to
+x_0}f(x)=\infty\)</span></li>
+<li>Oscillatory Discontinuity: <span
+class="math inline">\(\lim_{x\to0}\sin\frac 1x\)</span></li>
+</ul>
+<p><strong>uniform continuity</strong></p>
+<h4 id="properties-of-continuous-function">Properties of continuous
+function</h4>
+<ul>
+<li><p>continuous functions remain continuous after basic arithmetic
+operations, composite operations, and inverse operations</p></li>
+<li><p>elementary functions are all continuous</p></li>
+<li><p>continuous function on a closed interval</p>
+<ul>
+<li>has both minimum and maximum</li>
+<li>intermediate value thm <span class="math display">\[f(x)\in
+C[a,b]\to \forall c\in
+(f(a),f(b)),\exists\xi\in(a,b),(c=f(\xi))\]</span></li>
+</ul></li>
+</ul>
+<h2 id="derivative-differential">2. Derivative &amp; Differential</h2>
+<h3 id="derivative">Derivative</h3>
+<h4 id="definition-of-derivative">Definition of Derivative</h4>
+<p>set a function <span class="math inline">\(f(x)\)</span>, suppose
+<span class="math inline">\(\mathring{U}(x_0)\subseteq D_f\)</span>, the
+derivative of <span class="math inline">\(f(x)\)</span> at <span
+class="math inline">\(x_0\)</span> is defined as: <span
+class="math display">\[f&#39;(x_0)=\lim _{\Delta x\to 0}\cfrac
+{f(x_0+\Delta x)-f(x_0)}{\Delta x}\]</span> if the limit exists, we say
+that <span class="math inline">\(f(x)\)</span> is derivable at <span
+class="math inline">\(x_0\)</span></p>
+<p><strong>derivative function</strong> of <span
+class="math inline">\(f(x)\)</span> is denoted as <span
+class="math inline">\(f&#39;(x)\)</span> and it is a function such that:
+<span class="math display">\[\forall x\in D_f,(f&#39;(x)=\lim _{\Delta
+x\to 0}\cfrac {f(x_0+\Delta x)-f(x_0)}{\Delta x})\]</span></p>
+<p>one-sided derivative:</p>
+<ul>
+<li>right-sided derivative: <span
+class="math inline">\(f&#39;_+(x)\)</span></li>
+<li>left-sided derivative: <span
+class="math inline">\(f&#39;_-(x)\)</span></li>
+</ul>
+<h4 id="derivability">Derivability</h4>
+<p><span class="math inline">\(f\)</span> is continuous <span
+class="math inline">\(\Rightarrow\)</span> <span
+class="math inline">\(f\)</span> is derivable continue but not
+derivable: two cases where derivative limit does not exist</p>
+<ul>
+<li>cusp: <span class="math inline">\(f&#39;_+(x)\neq
+f&#39;_-(x)\)</span></li>
+<li>vertical: <span class="math inline">\(f&#39;(x)=\infty\)</span></li>
+</ul>
+<p>derivative of a derivable function is <strong>continue</strong> or
+has <strong>oscillatory discontinuity</strong></p>
+<h3 id="derivation">Derivation</h3>
+<h4 id="derivation-1">Derivation</h4>
+<p><span
+class="math inline">\((c_1u+c_2v)&#39;=c_1u&#39;+c_2v&#39;\)</span>
+<span class="math inline">\((uv)&#39;=u&#39;v+uv&#39;\)</span></p>
+<p>derivatives of elementary functions</p>
+<ul>
+<li>power function</li>
+<li>exponential function <span class="math inline">\(\lim _{x \to
+\infty}(1+\cfrac 1x)^x=e\)</span></li>
+<li>logarithmic function <span class="math inline">\(\lim _{x \to
+\infty}(1+\cfrac 1x)^x=e\)</span></li>
+<li>trigonometric function <span class="math inline">\(\lim _{x \to
+0}\cfrac{\sin x}{x}=1\)</span></li>
+<li>inverse trigonometric function <span class="math inline">\(\lim _{x
+\to 0}\cfrac{\sin x}{x}=1\)</span></li>
+</ul>
+<p><strong>inverse function derivation rule</strong>: <span
+class="math display">\[\cfrac {\mathrm{d}f(x)}{\mathrm{d}x}=\cfrac
+1{\cfrac {\mathrm{d}f^{-1}(f(x))}{\mathrm{d}f(x)}}\]</span>
+<strong>composed function derivation rule</strong>, a.k.a. chain rule:
+<span class="math display">\[\cfrac
+{\mathrm{d}f(g(x))}{\mathrm{d}x}=\cfrac
+{\mathrm{d}f(g(x))}{\mathrm{d}g(x)}\cfrac
+{\mathrm{d}g(x)}{\mathrm{d}x}\]</span> <strong>parameterized equation
+derivation</strong> suppose <span class="math inline">\(x=\phi (t),y=
+\psi (t)\)</span>, then <span class="math inline">\(\cfrac
+{\mathrm{d}y}{\mathrm{d}x}=\cfrac {\psi &#39;(t)}{\phi
+&#39;(t)}\)</span> <span
+class="math inline">\(\cfrac{\mathrm{d}y}{\mathrm{d}x}=\lim_{\Delta
+x\to0}\cfrac{y(x+\Delta x)-y(x)}{\Delta x}=\lim_{\Delta t\to
+0}\cfrac{\psi(t+\Delta t)-\psi(t)}{\phi(t+\Delta
+t)-\phi(t)}\)</span></p>
+<h4 id="high-ordered-derivative">High Ordered Derivative</h4>
+<p>high ordered derivative is denoted as <span
+class="math display">\[f^{(n)}(x)=\cfrac
+{\mathrm{d}^n}{\mathrm{d}x^n}f(x)\]</span> <strong>Leibniz
+formula</strong> <span
+class="math display">\[(uv)^{(n)}=\sum_{k=0}^n{n\choose
+k}u^{(k)}v^{(n-k)}\]</span></p>
+<p>high ordered derivative of some elementary functions:</p>
+<ul>
+<li><span
+class="math inline">\((x^m)^{(n)}=m(m-1)\cdots(m-n+1)x^{m-n}\)</span></li>
+<li><span class="math inline">\((a^x)^{(n)}=a^x(\ln a)^n\)</span></li>
+<li><span class="math inline">\((\ln
+x)^{(n)}=(-1)^{n-1}\cfrac{(n-1)!}{x^n}\)</span></li>
+<li><span class="math inline">\((\sin
+x)^{(n)}=\sin(x+\frac{n\pi}{2})\)</span></li>
+<li><span class="math inline">\((\cos
+x)^{(n)}=\cos(x+\frac{n\pi}{2})\)</span></li>
+</ul>
+<p>to solve high ordered derivative:</p>
+<ul>
+<li>reduce to the elementary functions by changing the form into sum of
+several terms</li>
+<li>use Leibniz formula</li>
+<li>use Taylor formula</li>
+<li>mathmatical induction</li>
+</ul>
+<h3 id="application-of-derivative">Application of Derivative</h3>
+<h4 id="monotonicity-convexity">Monotonicity &amp; Convexity</h4>
+<p>suppose <span class="math inline">\(f\in C[a,b]\)</span> and <span
+class="math inline">\(f\in D(a,b)\)</span></p>
+<ul>
+<li><strong>stationary point</strong>(驻点): <span
+class="math inline">\(f&#39;(x_0)=0\)</span></li>
+<li><strong>minimal &amp; maximal</strong>(极值点): <span
+class="math inline">\(\forall x\in
+\mathring{U}(x_0),(f(x_0)&lt;f(x))\)</span> and <span
+class="math inline">\(f&#39;(x_0)=0\)</span></li>
+<li><strong>minimum &amp; maximum</strong>(最值点): two ends or a
+minimal</li>
+</ul>
+<p><strong>monotonicity</strong> <span class="math inline">\(\forall
+x\in I,(f&#39;(x)\leq 0)\iff\forall x_1\leq x_2\in I,(f(x_1)\geq
+f(x_2))\)</span>, or <span class="math inline">\(f\)</span> is
+monotonically decreasing</p>
+<blockquote>
+<p>Proof: <span class="math inline">\(\Leftarrow\)</span>: use the
+definition of derivative <span
+class="math inline">\(\Rightarrow\)</span>: use differential mean value
+theorem</p>
+</blockquote>
+<p><strong>concavity and convexity</strong> <span
+class="math inline">\(\forall x\in I,(f&#39;&#39;(x)&lt; 0)\iff\forall
+x_1\leq x_2\in I,(f(\cfrac {x_1+x_2}2) &lt;
+\cfrac{f(x_1)+f(x_2)}2)\)</span>, or <span
+class="math inline">\(f\)</span> is concave <span
+class="math inline">\(\forall x\in I,(f&#39;&#39;(x)&gt; 0)\iff\forall
+x_1\leq x_2\in I,(f(\cfrac {x_1+x_2}2) &gt;
+\cfrac{f(x_1)+f(x_2)}2)\)</span>, or <span
+class="math inline">\(f\)</span> is convex</p>
+<blockquote>
+<p>proof</p>
+</blockquote>
+<h4 id="curvature">Curvature</h4>
+<p>differential of arc: <span
+class="math inline">\(\mathrm{d}s=\sqrt{(\mathrm{d}x)^2+(\mathrm{d}y)^2}=\sqrt
+{1+y&#39;^2}\mathrm{d}x\)</span> <strong>curvature</strong>: <span
+class="math inline">\(K=\cfrac
+{\mathrm{d}\theta}{\mathrm{d}s}=\cfrac{\cfrac
+{y&#39;&#39;}{y&#39;^2+1}\mathrm{d}x}{\sqrt
+{1+y&#39;^2}\mathrm{d}x}=\cfrac {y&#39;&#39;}{(1+y&#39;^2)^{\frac
+32}}\)</span> <strong>circle of curvature</strong></p>
+<ul>
+<li><strong>radius of curvature</strong>: <span
+class="math inline">\(\rho =\cfrac 1K\)</span></li>
+<li><strong>centre of curvature</strong>: <span
+class="math inline">\(D(x-\cfrac
+{y&#39;(1+y&#39;^2)}{y&#39;&#39;},y+\cfrac{1+y&#39;^2}{y&#39;&#39;})\)</span></li>
+</ul>
+<p>write the locus of the center of curvature of <span
+class="math inline">\(f(x)\)</span> as <span
+class="math inline">\(g(x)\)</span>, then <span
+class="math inline">\(g(x)\)</span> is the
+<strong>evolute</strong>(渐屈线) of <span
+class="math inline">\(f(x)\)</span> and <span
+class="math inline">\(f(x)\)</span> is the involute(渐伸线) of <span
+class="math inline">\(g(x)\)</span></p>
+<h4 id="approximate-solution-of-the-equation">Approximate solution of
+the equation</h4>
+<p>To solve the equation <span class="math inline">\(f(x)=0\)</span>,
+first find out the <strong>isolation interval</strong> <span
+class="math inline">\([a,b]\)</span>, then:</p>
+<ul>
+<li><strong>二分法</strong>
+<ul>
+<li><span class="math inline">\(x_{n+1}=x_n+x_{n-1}\)</span></li>
+</ul></li>
+<li><strong>切线法</strong>
+<ul>
+<li><span
+class="math inline">\(x_{n+1}=x_n-\cfrac{f(x_n)}{f&#39;(x_n)}\)</span></li>
+</ul></li>
+<li><strong>割线法</strong>
+<ul>
+<li><span
+class="math inline">\(x_{n+1}=x_n-\cfrac{x_n-x_{n-1}}{f(x_n)-f(x_{n-1})}f(x_n)\)</span></li>
+</ul></li>
+</ul>
+<h3 id="differential">Differential</h3>
+<p><span class="math inline">\(\mathrm{d}y\)</span> is called the
+differential main part of <span class="math inline">\(\Delta y\)</span>,
+where - <span class="math inline">\(\Delta y=y(x+\Delta x)-y(x)=A\Delta
+x+o(\Delta x)\)</span> - <span
+class="math inline">\(\mathrm{d}y=\lim_{\Delta x\to 0}y(x+\Delta
+x)-y(x)=A\Delta x\)</span> - <span
+class="math inline">\(\mathrm{d}x=\Delta x\)</span></p>
+<p>from the definition, we have <span
+class="math display">\[A=f&#39;(x)\]</span></p>
+<p>use differential to make approximate calculation <span
+class="math inline">\(y(x_0+\Delta x)=y(x_0)+\Delta y\approx
+y(x_0)+f&#39;(x_0)\Delta x\)</span></p>
+<h2 id="taylor-formula">3. Taylor Formula</h2>
+<h3 id="differential-mean-value-theorem">Differential Mean Value
+Theorem</h3>
+<p>Differential Mean Value Theorem reflects the relationship between
+functions and derivatives</p>
+<p><strong>Fermat's Extreme Value Theorem</strong> Suppose <span
+class="math inline">\(f\in D\mathring{U}(x_0)\)</span> and <span
+class="math inline">\(\forall x\in \mathring{U}(x_0),\bigg(f(x_0)\leq
+f(x)\bigg)\)</span> , than <span
+class="math inline">\(f&#39;(x_0)=0\)</span></p>
+<p><strong>Rolle mean value theorem</strong> Suppose <span
+class="math inline">\(f\in C[a,b]\)</span>, <span
+class="math inline">\(f\in D(a,b)\)</span>, and <span
+class="math inline">\(f(a)=f(b)\)</span>, then: <span
+class="math display">\[\exists\xi\in(a,b),\bigg(f&#39;(\xi)=0\bigg)\]</span>
+&gt;[!note] Proof &gt;if <span class="math inline">\(f\)</span> is a
+constant function, then <span class="math inline">\(\forall
+x\in(a,b),(f&#39;(x)=0)\)</span> &gt;otherwise, it has an extremum, then
+use Fermat Thm</p>
+<p><strong>Lagrange mean value theorem</strong> Suppose <span
+class="math inline">\(\big(f,g\in C[a,b]\big)\wedge \big(f,g\in
+C^1(a,b)\big)\)</span>, then: <span class="math display">\[\exists \xi
+\in (a,b),\bigg(f&#39;(\xi)=\cfrac {f(a)-f(b)}{a-b}\bigg)\]</span>
+&gt;[!note] <strong>Proof</strong> &gt;constructing auxiliary function
+<span class="math inline">\(\phi (x)=f(x)-\cfrac
+{f(a)-f(b)}{a-b}x\)</span> &gt;according to Rolle's Thm, <span
+class="math inline">\(\exists\xi\in(a,b),\bigg(\phi&#39;(\xi)=0\bigg)\)</span></p>
+<p><strong>Cauchy mean value theorem</strong> Suppose <span
+class="math inline">\(\big(f,g\in C[a,b]\big)\wedge \big(f,g\in
+C^1(a,b)\big)\wedge \big(g&#39;(x)\neq0\big)\)</span>, then: <span
+class="math display">\[\exists\xi\in(a,b),\bigg(\cfrac
+{f&#39;(\xi)}{g&#39;(\xi)}=\cfrac
+{f(a)-f(b)}{g(a)-g(b)}\bigg)\]</span></p>
+<blockquote>
+<p>[!note] <strong>Proof</strong> constructing auxiliary function <span
+class="math inline">\(\phi (x)=
+f(x)-\cfrac{f(a)-f(b)}{g(a)-g(b)}g(x)\)</span> according to Lagrange
+mean value Thm, <span
+class="math inline">\(\exists\xi\in(a,b),\bigg(\phi&#39;(\xi)=0\bigg)\)</span></p>
+</blockquote>
+<h3 id="lhôpitals-rule">L'Hôpital's rule</h3>
+<p>Suppose <span class="math inline">\(\big(f,g\in
+C^1\mathring{U}(x_0,\delta)\big)\wedge\big(\lim _{x\to x_0}f(x)=\lim
+_{x\to x_0}{g(x)}=0\big)\wedge\big(g&#39;(x_0)\neq0\big)\)</span>, then:
+<span class="math display">\[\lim _{x\to x_0}\cfrac {f(x)}{g(x)}=\lim
+_{x\to x_0}\cfrac {f&#39;(x)}{g&#39;(x)}\]</span></p>
+<blockquote>
+<p>Proof WLOG let <span class="math inline">\(f(x_0)=g(x_0)=0\)</span>
+By Definition of Derivative: <span class="math inline">\(\lim _{x\to
+x_0}\cfrac {f(x)}{g(x)}=\lim_{x\to
+x_0}\cfrac{\cfrac{f(x)-f(x_0)}{x-x_0}}{\cfrac{g(x)-g(x_0)}{x-x_0}}=\lim
+_{x\to x_0}\cfrac {f&#39;(x)}{g&#39;(x)}\)</span> Use Cauchy mean value
+theorem: <span
+class="math inline">\(\exists\xi\in(x,x_0),\big(\cfrac{f&#39;(\xi)}{g&#39;(\xi)}=\cfrac{f(x)-f(x_0)}{g(x)-g(x_0)}\big)\)</span>
+, so <span class="math inline">\(\lim _{x\to x_0}\cfrac
+{f(x)}{g(x)}=\lim_{\xi\to x_0}\cfrac{f&#39;(\xi)}{g&#39;(\xi)}=\lim
+_{x\to x_0}\cfrac {f&#39;(x)}{g&#39;(x)}\)</span></p>
+</blockquote>
+<h3 id="taylor-formula-1">Taylor Formula</h3>
+<p>How to approximate a given function <span
+class="math inline">\(f(x)\)</span> (in the neighborhood of <span
+class="math inline">\(x_0\)</span>) by a n-degree polynomial function
+<span class="math inline">\(P_n(x)\)</span> ? Find a polynomial function
+such that: <span
+class="math inline">\(P_n^{(k)}(x_0)=f^{(k)}(x_0)\)</span> so that the
+remainder <span
+class="math inline">\(R_n(x)=f^{(k)}(x_0)-P_n^{(k)}(x_0)=o(x-x_0)^n\)</span></p>
+<blockquote>
+<p>Proof from the defination of <span
+class="math inline">\(P_n(x)\)</span> , <span
+class="math inline">\(R_n^{(k)}=0,k\in\{0,1,2,\dots,n\}\)</span> from
+L'Hôpital's rule <span class="math inline">\(\lim_{x\to
+x_0}\cfrac{R_n(x)}{(x-x_0)^{n}}=0\)</span></p>
+</blockquote>
+<p>Suppose <span class="math inline">\(f(x)\in C^n\)</span>
+<strong>Taylor Formula</strong>: <span
+class="math display">\[f(x)=\sum_{k=0}^n\cfrac
+{f^{(k)}(x_0)}{k!}(x-x_0)^k+R_n(x)\]</span> <strong>Peano
+Remainder</strong>: <span
+class="math display">\[R_n(x)=o((x-x_0)^n)\]</span> <strong>Lagrange
+Remainder</strong>: (need <span class="math inline">\(f(x)\in
+C^{n+1}\)</span>) <span
+class="math display">\[R_n(x)=\cfrac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1}\]</span></p>
+<p>more often then not, we use the equation below: <strong>Maclaurin
+Series Expansion</strong>: <span
+class="math display">\[f(x)=\sum_{k=0}^n\cfrac
+{f^{(k)}(0)}{k!}x^k+R_n(x)\]</span> some requently used Maclaurin
+expansion listed below:</p>
+<ul>
+<li><span
+class="math inline">\(e^x=\sum_{k=0}^n\cfrac{x^k}{k!}+o(x^n)\)</span></li>
+<li><span
+class="math inline">\(\ln(1+x)=\sum_{k=1}^n\cfrac{(-1)^{k+1}}{k}x^k+o(x^n)\)</span></li>
+<li><span
+class="math inline">\(\cfrac1{1-x}=\sum_{k=0}^nx^k+o(x^n)\)</span></li>
+<li><span
+class="math inline">\(\cfrac{1}{x+b}=\sum_{k=0}^n\cfrac{(-1)^k}{b^{k+1}}x^k+o(x^n)\)</span></li>
+<li><span class="math inline">\((1+x)^a=\sum_{k=0}^n{a\choose
+k}x^k+o(x^n)\)</span></li>
+<li><span class="math inline">\(\sin x=\sum_{k=0}^n
+\cfrac{\sin(\frac{k\pi}2)}{k!}x^k+o(x^n)\)</span></li>
+<li><span class="math inline">\(\cos
+x=\sum_{k=0}^n\cfrac{\cos(\frac{k\pi}2)}{k!}x^k+o(x^n)\)</span></li>
+<li><span class="math inline">\(\tan
+x=x+\frac13x^3+\frac2{15}x^5+o(x^5)\)</span></li>
+<li><span class="math inline">\(\arcsin x=x+\frac16x^3\)</span></li>
+<li><span class="math inline">\(e=\sum_{k=0}^n{n\choose
+k}\cfrac1{n^k}=\sum_{k=0}^n\cfrac1{k!}\)</span></li>
+</ul>
+<h2 id="integral">4. Integral</h2>
+<h3 id="indefinite-integral">Indefinite Integral</h3>
+<h4 id="definition-of-indefinite-integral">Definition of Indefinite
+Integral</h4>
+<p>if <span class="math inline">\(F&#39;(x)=f(x)\)</span>, then <span
+class="math inline">\(F(x)\)</span> is a <strong>primitive</strong> of
+<span class="math inline">\(f(x)\)</span></p>
+<p>all the primitive of <span class="math inline">\(f(x)\)</span> is
+called <strong>indefinite integral</strong> of it, denoted as <span
+class="math inline">\(\int f(x)\mathrm{d}x\)</span> <span
+class="math display">\[\int f(x)\mathrm{d}x=F(x)+C\]</span></p>
+<h4 id="table-of-integrals">Table of Integrals</h4>
+<ul>
+<li><span class="math inline">\(\int
+x^{m}\mathrm{d}x=\cfrac{1}{m+1}x^{m+1}+C\)</span></li>
+<li><span class="math inline">\(\int\cfrac1x\mathrm{d}x=\ln
+|x|+C\)</span></li>
+<li><span class="math inline">\(\int a^x\mathrm{d}x=\cfrac{a^x}{\ln
+a}+C\)</span></li>
+<li><span class="math inline">\(\int \ln x\mathrm{d}x=x\ln
+x-x+C\)</span></li>
+<li><span class="math inline">\(\int\sin x\mathrm{d}x=-\cos
+x+C\)</span></li>
+<li><span class="math inline">\(\int\cos x\mathrm{d}x=\sin
+x+C\)</span></li>
+<li><span class="math inline">\(\int\tan x\mathrm{d}x=\ln|\sec
+x|+C\)</span></li>
+<li><span class="math inline">\(\int\sec x\mathrm{d}x=\ln|\sec x+\tan
+x|+C\)</span></li>
+<li><span class="math inline">\(\int\sec^2x\mathrm{d}x=\\tan
+x+C\)</span></li>
+<li><span class="math inline">\(\int\csc^2x\mathrm{d}x=-\cot
+x+C\)</span></li>
+<li><span class="math inline">\(\int
+\cfrac{\mathrm{d}x}{x^2+a^2}=\frac1a\arctan\cfrac xa+C\)</span></li>
+<li><span
+class="math inline">\(\int\cfrac{\mathrm{d}x}{x^2-a^2}=\frac1{2a}\ln|\cfrac{x-a}{x+a}|+C\)</span></li>
+<li><span
+class="math inline">\(\int\cfrac{\mathrm{d}x}{\sqrt{a^2-x^2}}=\arcsin\cfrac
+xa+C\)</span></li>
+<li><span
+class="math inline">\(\int\cfrac{\mathrm{d}x}{\sqrt{x^2+a^2}}=\ln(x+\sqrt{x^2+a^2})+C\)</span></li>
+<li><span
+class="math inline">\(\int\cfrac{\mathrm{d}x}{\sqrt{x^2-a^2}}=\ln|x+\sqrt{x^2-a^2}|+C\)</span></li>
+</ul>
+<h4 id="integeral-method">integeral method</h4>
+<p><strong>integration by substitution</strong> <span
+class="math display">\[\int f(x)dx=\int\cfrac
+{f(x)}{u&#39;(x)}du\]</span> <span class="math display">\[\int
+f(x)dx=\int f(x)x&#39;(t)dt\]</span> <strong>integration by
+parts</strong> <span class="math display">\[\int uv&#39;dx=uv-\int
+u&#39;vdx\]</span></p>
+<h4 id="integeral-of-rational-functions">Integeral of rational
+functions</h4>
+<p>a rational function can be can be represented as <span
+class="math inline">\(R(x)=H(x)+\cfrac{P(x)}{Q(x)}\)</span>, <span
+class="math inline">\(H(x),P(x),Q(x)\)</span> are polynomials and <span
+class="math inline">\(\deg(P)&lt;\deg(Q)\)</span></p>
+<p>use method of indeterminate coefficients <span
+class="math display">\[\cfrac {P(x)}{Q(x)}=\sum\sum_{i=1}^k \cfrac
+{A_i}{(x-a)^i}+\sum\sum_{i=1}^k \cfrac
+{B_ix+C_i}{(x^2+bx+c)^i}\]</span></p>
+<ul>
+<li><span class="math inline">\(I=\int\cfrac
+{A_k}{(x-a)^k}\mathrm{d}x\)</span>
+<ul>
+<li>when <span class="math inline">\(k=1\)</span>, <span
+class="math inline">\(I=\int\cfrac{A}{x-a}dx=A\ln{\lvert x-a
+\rvert}\)</span></li>
+<li>when <span class="math inline">\(k&gt;1\)</span>, <span
+class="math inline">\(I=\int
+\cfrac{A}{(x-a)^k}d(x-a)=\cfrac{-A}{(k-1)(x-a)^{k-1}}\)</span></li>
+</ul></li>
+<li><span class="math inline">\(I=\int\cfrac
+{B_kx+C_k}{(x^2+bx+c)^k}\mathrm{d}x=\int\cfrac{m\mathrm{d}(x^2+bx+c)+n\mathrm{d}x}{(x^2+bx+c)^k}=\cfrac{-m}{(k-1)(x^2+bx+c)^{k-1}}+\int\cfrac{n\mathrm{d}t}{(t^2+1)^k}\)</span>
+<ul>
+<li>when <span class="math inline">\(k=1\)</span>, <span
+class="math inline">\(\int\cfrac{\mathrm{d}t}{t^2+1}=\arccos
+t\)</span></li>
+<li>when <span class="math inline">\(k&gt;1\)</span>, <span
+class="math inline">\(\int\cfrac{\mathrm{d}t}{(t^2+1)^k}=\)</span></li>
+</ul></li>
+</ul>
+<p><strong>translate into rational functions</strong> use substitution
+method to transition a function into rational function, let <span
+class="math inline">\(t=\tan\frac x2\)</span> <span
+class="math display">\[\int R(\sin x,\cos x)\mathrm{d}x=\int
+R(\cfrac{2t}{1+t^2},\cfrac{1-t^2}{1+t^2})\cfrac{2}{1+t^2}\mathrm{d}t\]</span>
+when it is homogeneous, we use <span class="math inline">\(t=\tan
+x\)</span> <span class="math display">\[\int R(\tan x)\mathrm{d}x=\int
+R(t)\cfrac{1}{1+t^2}\mathrm{d}t\]</span> rational function with root,
+let <span class="math inline">\(t=\sqrt[n]{\frac{ax+b}{cx+d})}\)</span>
+<span class="math display">\[\int
+R(x,\sqrt[n]{\frac{ax+b}{cx+d})}\mathrm{d}x=\int
+R(\frac{dt^n-b}{-ct^n+a},t)\mathrm{d}(\frac{dt^n-b}{-ct^n+a})\]</span></p>
+<h3 id="riemann-integeral">Riemann Integeral</h3>
+<h4 id="defination">Defination</h4>
+<p>we define <strong>Riemann Integeral</strong> , denoted as <span
+class="math inline">\(\int_a^bf(x)\mathrm{d}x\)</span> as: suppose a
+sequence <span class="math inline">\(\{x_i\}_{i=0}^n\)</span> and <span
+class="math inline">\(x_0=a,x_n=b\)</span>, and we let <span
+class="math inline">\(\Delta x_i=x_i-x_{i-1}\)</span>, <span
+class="math inline">\(\lambda=\max\{\Delta x_1,\Delta x_2,\cdots,\Delta
+x_n\}\)</span>, <span
+class="math inline">\(\xi_i\in[x_{i-1},x_i]\)</span>, <span
+class="math inline">\(S=\sum_{i=1}^n\Delta x_if(\xi_i)\)</span>, then
+<span
+class="math display">\[\lim_{\lambda\to0}S=\int_a^bf(x)\mathrm{d}x\]</span></p>
+<p><strong>Riemannian integrability</strong> of <span
+class="math inline">\(f(x)\)</span>: <span class="math inline">\(f(x)\in
+R[a,b]\iff\)</span> the set of</p>
+<h4 id="properties">Properties</h4>
+<p><strong>mean value theorem of integeral</strong> <span
+class="math inline">\(f(x),g(x)\in C[a,b]\)</span> and <span
+class="math inline">\(g(x)\geq0\)</span> <span
+class="math display">\[\exists\xi\in(a,b),\Big(\int_a^bf(x)g(x)\mathrm{d}x=\int_a^b
+f(\xi)g(x)\mathrm{d}x\Big)\]</span></p>
+<h4 id="newtom-leibniz-eqution">Newtom-Leibniz eqution</h4>
+<p>we are going to explore the connection between determinate integeral
+and differential</p>
+<p><strong>Newtom-Leibniz</strong> <span
+class="math display">\[\cfrac{\mathrm{d}}{\mathrm{d}x}\int_a^xf(x)\mathrm{d}x=f(x)\]</span></p>
+<blockquote>
+<p>Proof: let <span
+class="math inline">\(\Phi(x)=\int_a^xf(x)\mathrm{d}x\)</span>, then
+<span class="math inline">\(\Delta\Phi(x)=\Phi(x+\Delta
+x)-\Phi(x)=\int_x^{x+\Delta x}f(x)\mathrm{d}x\)</span> <span
+class="math inline">\(\Rightarrow\exists\xi\in(x,x+\Delta
+x),\Big(\int_x^{x+\Delta x}f(x)\mathrm{d}x=f(\xi)\Delta x\Big)\)</span>
+<span class="math inline">\(\Rightarrow\Delta
+x\to0,\Big(\int_x^{x+\Delta x}f(x)\mathrm{d}x=f(x)\Delta x\Big)\)</span>
+<span class="math inline">\(\Rightarrow\lim_{\Delta x\to
+0}\cfrac{\Phi(x+\Delta x)-\Phi(x)}{\Delta x}=f(x)\)</span></p>
+</blockquote>
+<p>suppose <span class="math inline">\(\int
+f(x)\mathrm{d}x=F(x)+C\)</span>, then <span
+class="math display">\[\int_a^bf(x)\mathrm{d}x=F(b)-F(a)\]</span></p>
+<blockquote>
+<p>Proof: <span
+class="math inline">\(F(x)=\Phi(x)+C=\int_a^xf(x)\mathrm{d}x+C\)</span>
+<span class="math inline">\(F(a)=\int_a^af(x)\mathrm{d}x+C=C\)</span>
+<span class="math inline">\(F(b)=\int_a^bf(x)\mathrm{d}x+C\)</span></p>
+</blockquote>
+<p><span
+class="math display">\[\cfrac{\mathrm{d}}{\mathrm{d}x}\int_{\psi(x)}^{\phi(x)}f(t)\mathrm{d}t=f(\phi(x))\phi&#39;(x)-f(\psi(x))\psi&#39;(x)\]</span></p>
+<p>n even <span
+class="math inline">\(\int_0^{\frac\pi2}\sin^nx=\cfrac{n-1!!}{n!!}\frac\pi2\)</span>
+n odd <span
+class="math inline">\(\int_0^{\frac\pi2}\sin^nx=\cfrac{n-1!!}{n!!}\)</span></p>
+<h4 id="application-of-integral">Application of Integral</h4>
+<ul>
+<li>area of two-dimensional figure
+<ul>
+<li><span class="math inline">\(A=\int_a^by\mathrm{d}x\)</span></li>
+<li><span
+class="math inline">\(A=\frac12\int_\alpha^\beta\rho^2\mathrm{d}\theta\)</span></li>
+</ul></li>
+<li>volume of a three-dimensional figure whose section area can be
+figured out
+<ul>
+<li><span class="math inline">\(V=\int_a^bA(x)\mathrm{d}x\)</span></li>
+</ul></li>
+<li>volume of a rotator
+<ul>
+<li><span class="math inline">\(V_x=\pi\int_a^by^2\mathrm{d}x\)</span>
+<span class="math inline">\(V_y=\pi\int_a^bx^2\mathrm{d}y\)</span></li>
+</ul></li>
+<li>length of arc
+<ul>
+<li><span
+class="math inline">\(s=\int_a^b\sqrt{1+y&#39;^2}\mathrm{d}x\)</span></li>
+<li><span
+class="math inline">\(s=\int_\alpha^\beta\sqrt{\phi&#39;^2(t)+\psi&#39;^2(t)}\mathrm{d}t\)</span></li>
+<li><span
+class="math inline">\(s=\int_\alpha^\beta\sqrt{\rho&#39;^2+\rho^2}\mathrm{d}\theta\)</span></li>
+</ul></li>
+<li>area of rotating surface
+<ul>
+<li><span
+class="math inline">\(A_x=2\pi\int_a^by\sqrt{1+y&#39;^2}\mathrm{d}x\)</span></li>
+<li><span
+class="math inline">\(A_x=2\pi\int_a^b\psi(t)\sqrt{\phi&#39;^2(t)+\psi&#39;^2(t)}\mathrm{d}t\)</span></li>
+<li><span
+class="math inline">\(A_x=2\pi\int_\alpha^\beta\phi(\theta)\sin\theta\sqrt{\rho&#39;^2(\theta)+\rho^2(\theta)}\mathrm{d}\theta\)</span></li>
+</ul></li>
+</ul>
+<h4 id="improper-integral">Improper integral</h4>
+<p>case 1: integeral interval is unbounded <span
+class="math display">\[\int_a^{+\infty}f(x)\mathrm{d}x=\lim_{x\to+\infty}F(x)-F(a)\]</span></p>
+<p>case 2: <span class="math inline">\(f\)</span> is unbounded at <span
+class="math inline">\(\mathring{U}(b)\)</span>, where <span
+class="math inline">\(b\)</span> is called 瑕点/奇点 <span
+class="math display">\[\int_a^bf(x)\mathrm{d}x=\lim_{x\to
+b^-}F(x)-F(a)\]</span></p>
+<p>convergence test</p>
+<p><strong>反常积分审敛法</strong> 1.
+<strong>无穷限反常积分审敛</strong> 2.
+<strong>无界函数反常积分审敛</strong></p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Math/" class="category-chain-item">Math</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Math/" class="print-no-link">#Math</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>Mathmetical Analysis</div>
+      <div>http://example.com/2023/12/12/Mathmetical Analysis/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>Adiios</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>December 12, 2023</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>Licensed under</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2023/12/13/English/" title="Punch card">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Punch card</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/12/11/Set%20Theory/" title="Set Theory">
+                        <span class="hidden-mobile">Set Theory</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>Table of Contents</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+  
+  
+
+
+
+
+
+  <script>
+  Fluid.utils.createScript('https://lib.baomitu.com/mermaid/8.14.0/mermaid.min.js', function() {
+    mermaid.initialize({});
+
+    Fluid.utils.listenDOMLoaded(function() {
+      Fluid.events.registerRefreshCallback(function() {
+        if ('mermaid' in window) {
+          mermaid.init();
+        }
+      });
+    });
+  });
+</script>
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>
